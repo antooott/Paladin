@@ -14,27 +14,25 @@ namespace Paladin.PaladinCode.Cards.Basic;
 
 public class DivineSmite : PaladinCard
 {
-    public int totovar = 6;
     public DivineSmite() : base(1,
         CardType.Skill, CardRarity.Basic,
         TargetType.Self)
     {
         
         WithPower<StrengthPower>(1);
-        WithPower<VigorPower>(totovar);
+        WithPower<VigorPower>(8);
     }
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.ApplySelf<StrengthPower>(this, DynamicVars.Strength.BaseValue);
-        await CommonActions.ApplySelf<VigorPower>(this, totovar); // where the hell is this value
+        //await CommonActions.ApplySelf<StrengthPower>(this, DynamicVars.Strength.BaseValue);
+        await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Strength.UpgradeValueBy(1);
-        this.totovar += 2; // no idea if this works, cant even get to card reward; why
+        DynamicVars["VigorPower"].UpgradeValueBy(4);
     }
 }
