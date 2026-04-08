@@ -4,5 +4,9 @@
   "PALADIN-DIVINE_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "PALADIN-DIVINE_SMITE.title": "Divine Smite",
   "PALADIN-DEFENDING.description": "Gain {Block:diff()} [gold]Block[/gold]. Umazing!",
-  "PALADIN-DEFENDING.title": "Defending"
+  "PALADIN-DEFENDING.title": "Defending",
+  "PALADIN-UMA_BLAST.description": "ts not blasting ngl",
+  "PALADIN-UMA_BLAST.title": "UmaBlast",
+  "PALADIN-ANOTHER_DUMMY.description": "dummy card",
+  "PALADIN-ANOTHER_DUMMY.title": "AnotherDummy"
 }
