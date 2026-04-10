@@ -18,8 +18,6 @@ public class DivineSmite : PaladinCard
         CardType.Skill, CardRarity.Basic,
         TargetType.Self)
     {
-        
-        WithPower<StrengthPower>(1);
         WithPower<VigorPower>(8);
     }
 

@@ -8,5 +8,9 @@
   "PALADIN-UMA_BLAST.description": "ts not blasting ngl",
   "PALADIN-UMA_BLAST.title": "UmaBlast",
   "PALADIN-ANOTHER_DUMMY.description": "dummy card",
-  "PALADIN-ANOTHER_DUMMY.title": "AnotherDummy"
+  "PALADIN-ANOTHER_DUMMY.title": "AnotherDummy",
+  "PALADIN-REVERBERATING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack is played twice.",
+  "PALADIN-REVERBERATING_SMITE.title": "Reverberating Smite",
+  "PALADIN-DUMMY_RARE.description": "Dummy rare card",
+  "PALADIN-DUMMY_RARE.title": "DummyRare"
 }

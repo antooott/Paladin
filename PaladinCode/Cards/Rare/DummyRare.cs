@@ -2,15 +2,14 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using Paladin.PaladinCode.Cards;
 
-namespace Paladin.PaladinCode.Cards.Common;
+namespace Paladin.PaladinCode.Cards.Rare;
 
-public class UmaBlast : PaladinCard
+public class DummyRare : PaladinCard
 {
-    public UmaBlast() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+    public DummyRare() : base(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
     {
         WithBlock(8);
     }
@@ -18,7 +17,6 @@ public class UmaBlast : PaladinCard
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         await CommonActions.CardBlock(this, play);
-        await CommonActions.ApplySelf<LethalityPower>(this, 50M);
     }
 
     protected override void OnUpgrade()
