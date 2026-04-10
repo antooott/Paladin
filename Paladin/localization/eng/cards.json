@@ -12,5 +12,7 @@
   "PALADIN-REVERBERATING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack is played twice.",
   "PALADIN-REVERBERATING_SMITE.title": "Reverberating Smite",
   "PALADIN-DUMMY_RARE.description": "Dummy rare card",
-  "PALADIN-DUMMY_RARE.title": "DummyRare"
+  "PALADIN-DUMMY_RARE.title": "DummyRare",
+  "PALADIN-FLOWING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack refunds [gold]Vigor[/gold].",
+  "PALADIN-FLOWING_SMITE.title": "Flowing Smite"
 }

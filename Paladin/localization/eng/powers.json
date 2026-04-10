@@ -1,5 +1,8 @@
 {
-  "PALADIN-REVERBERATING_SMITE_POWER.description": "",
-  "PALADIN-REVERBERATING_SMITE_POWER.smartDescription": "",
-  "PALADIN-REVERBERATING_SMITE_POWER.title": "ReverberatingSmitePower"
+  "PALADIN-REVERBERATING_SMITE_POWER.description": "desc",
+  "PALADIN-REVERBERATING_SMITE_POWER.smartDescription": "smratdesc",
+  "PALADIN-REVERBERATING_SMITE_POWER.title": "Reverberating",
+  "PALADIN-FLOWING_SMITE_POWER.description": "desc",
+  "PALADIN-FLOWING_SMITE_POWER.smartDescription": "smartdesc",
+  "PALADIN-FLOWING_SMITE_POWER.title": "Flowing"
 }
