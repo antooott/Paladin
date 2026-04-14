@@ -4,5 +4,11 @@
   "PALADIN-REVERBERATING_SMITE_POWER.title": "Reverberating",
   "PALADIN-FLOWING_SMITE_POWER.description": "desc",
   "PALADIN-FLOWING_SMITE_POWER.smartDescription": "smartdesc",
-  "PALADIN-FLOWING_SMITE_POWER.title": "Flowing"
+  "PALADIN-FLOWING_SMITE_POWER.title": "Flowing",
+  "PALADIN-SEARING_SMITE_POWER.description": "",
+  "PALADIN-SEARING_SMITE_POWER.smartDescription": "",
+  "PALADIN-SEARING_SMITE_POWER.title": "Searing",
+  "PALADIN-BURN_POWER.description": "",
+  "PALADIN-BURN_POWER.smartDescription": "",
+  "PALADIN-BURN_POWER.title": "BurnPower"
 }
