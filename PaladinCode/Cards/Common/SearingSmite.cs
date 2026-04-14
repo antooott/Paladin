@@ -11,24 +11,29 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
+using MegaCrit.Sts2.Core.Models.Powers;
 using Paladin.PaladinCode.Cards;
 
 namespace Paladin.PaladinCode.Cards.Common;
 
 public sealed class SearingSmite : PaladinCard
 {
-    public SearingSmite() : base(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+    public SearingSmite() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
+        WithPower<VigorPower>(6);
         WithPower<SearingSmitePower>(3);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
+        await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
+        await Cmd.Wait(0.1f);
         await CommonActions.ApplySelf<SearingSmitePower>(this, DynamicVars["SearingSmitePower"].BaseValue);
     }
 
     protected override void OnUpgrade()
     {
+        DynamicVars["VigorPower"].UpgradeValueBy(2m);
         DynamicVars["SearingSmitePower"].UpgradeValueBy(1m);
     }
 }

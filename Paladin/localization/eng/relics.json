@@ -1,3 +1,5 @@
 {
-  
+  "PALADIN-HOLY_SYMBOL.description": "spell slots wow",
+  "PALADIN-HOLY_SYMBOL.flavor": "At the start of your turn, gain 2 Spell Slots until end of turn.",
+  "PALADIN-HOLY_SYMBOL.title": "Holy Symbol"
 }

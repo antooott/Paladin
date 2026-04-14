@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using Paladin.PaladinCode.Cards.Basic;
+using Paladin.PaladinCode.Relics;
 
 namespace Paladin.PaladinCode.Character;
 
@@ -37,7 +38,7 @@ public class Paladin : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<HolySymbol>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<PaladinCardPool>();

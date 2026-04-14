@@ -10,5 +10,8 @@
   "PALADIN-SEARING_SMITE_POWER.title": "Searing",
   "PALADIN-BURN_POWER.description": "",
   "PALADIN-BURN_POWER.smartDescription": "",
-  "PALADIN-BURN_POWER.title": "BurnPower"
+  "PALADIN-BURN_POWER.title": "BurnPower",
+  "PALADIN-SPELL_SLOT_POWER.description": "",
+  "PALADIN-SPELL_SLOT_POWER.smartDescription": "",
+  "PALADIN-SPELL_SLOT_POWER.title": "Spell Slots"
 }
