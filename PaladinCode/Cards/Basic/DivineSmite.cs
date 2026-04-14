@@ -18,7 +18,7 @@ public class DivineSmite : PaladinCard
         CardType.Skill, CardRarity.Basic,
         TargetType.Self)
     {
-        WithPower<VigorPower>(8);
+        WithPower<VigorPower>(6);
     }
 
     protected override async Task OnPlay(
@@ -31,6 +31,6 @@ public class DivineSmite : PaladinCard
 
     protected override void OnUpgrade()
     {
-        DynamicVars["VigorPower"].UpgradeValueBy(4);
+        DynamicVars["VigorPower"].UpgradeValueBy(3);
     }
 }
