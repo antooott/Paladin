@@ -43,7 +43,7 @@ public sealed class SearingSmite : PaladinCard
         DynamicVars["SearingSmitePower"].UpgradeValueBy(1m);
     }
     
-    protected override bool IsPlayablegit 
+    protected override bool IsPlayable
     {
         get
         {
