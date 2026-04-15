@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,6 +10,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using Paladin.PaladinCode.Cards;
+using Paladin.PaladinCode.Powers;
 
 namespace Paladin.PaladinCode.Cards.Basic;
 
@@ -19,18 +21,32 @@ public class DivineSmite : PaladinCard
         TargetType.Self)
     {
         WithPower<VigorPower>(6);
+        WithPower<SpellSlotPower>(-this.CanonicalEnergyCost);
     }
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        //await CommonActions.ApplySelf<StrengthPower>(this, DynamicVars.Strength.BaseValue);
         await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
+        await CommonActions.ApplySelf<SpellSlotPower>(this, DynamicVars["SpellSlotPower"].BaseValue);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars["VigorPower"].UpgradeValueBy(3);
+    }
+    
+    protected override bool IsPlayable
+    {
+        get
+        {
+            DivineSmite divineSmite = this;
+            if (divineSmite.Owner.HasPower<SpellSlotPower>() &&  divineSmite.Owner.Creature.GetPowerAmount<SpellSlotPower>() >= divineSmite.CanonicalEnergyCost)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
