@@ -14,6 +14,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Powers;
 using Paladin.PaladinCode.Cards;
+using Paladin.PaladinCode.SpellSlots;
 
 namespace Paladin.PaladinCode.Cards.Common;
 
@@ -23,7 +24,8 @@ public sealed class SearingSmite : PaladinCard
     {
         WithPower<VigorPower>(6);
         WithPower<SearingSmitePower>(3);
-        WithPower<SpellSlotPower>(-this.CanonicalEnergyCost);
+        WithPower<SpellSlotPower>(1);
+        WithKeyword(PaladinKeywords.SpellLvl1);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -31,7 +33,7 @@ public sealed class SearingSmite : PaladinCard
         await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
         await Cmd.Wait(0.1f);
         await CommonActions.ApplySelf<SearingSmitePower>(this, DynamicVars["SearingSmitePower"].BaseValue);
-        await CommonActions.ApplySelf<SpellSlotPower>(this, DynamicVars["SpellSlotPower"].BaseValue);
+        await CommonActions.ApplySelf<SpellSlotPower>(this, -DynamicVars["SpellSlotPower"].BaseValue);
     }
 
     protected override void OnUpgrade()

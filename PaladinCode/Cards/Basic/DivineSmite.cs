@@ -11,6 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using Paladin.PaladinCode.Cards;
 using Paladin.PaladinCode.Powers;
+using Paladin.PaladinCode.SpellSlots;
 
 namespace Paladin.PaladinCode.Cards.Basic;
 
@@ -21,7 +22,8 @@ public class DivineSmite : PaladinCard
         TargetType.Self)
     {
         WithPower<VigorPower>(6);
-        WithPower<SpellSlotPower>(-this.CanonicalEnergyCost);
+        WithPower<SpellSlotPower>(1);
+        WithKeyword(PaladinKeywords.SpellLvl1);
     }
 
     protected override async Task OnPlay(
@@ -29,7 +31,7 @@ public class DivineSmite : PaladinCard
         CardPlay play)
     {
         await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
-        await CommonActions.ApplySelf<SpellSlotPower>(this, DynamicVars["SpellSlotPower"].BaseValue);
+        await CommonActions.ApplySelf<SpellSlotPower>(this, -DynamicVars["SpellSlotPower"].BaseValue);
     }
 
     protected override void OnUpgrade()
