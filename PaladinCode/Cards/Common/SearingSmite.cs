@@ -25,7 +25,7 @@ public sealed class SearingSmite : PaladinCard
         WithPower<VigorPower>(6);
         WithPower<SearingSmitePower>(3);
         WithPower<SpellSlotPower>(1);
-        WithKeyword(PaladinKeywords.SpellLvl1);
+        WithKeyword(PaladinKeywords.Spell);
         WithTags(PaladinTags.Smite);
     }
 

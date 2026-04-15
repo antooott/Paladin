@@ -7,18 +7,10 @@ namespace Paladin.PaladinCode;
 public static class PaladinKeywords
 {
     [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
-    public static CardKeyword SpellLvl1;
+    public static CardKeyword Spell;
 
     public static bool IsSpellLvl1(this CardModel card)
     {
-        return card.Keywords.Contains(SpellLvl1);
-    }
-    
-    [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
-    public static CardKeyword SpellLvl2;
-
-    public static bool IsSpellLvl2(this CardModel card)
-    {
-        return card.Keywords.Contains(SpellLvl2);
+        return card.Keywords.Contains(Spell);
     }
 }
