@@ -13,6 +13,6 @@
   "PALADIN-DUMMY_RARE.title": "DummyRare",
   "PALADIN-FLOWING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack refunds [gold]Vigor[/gold].",
   "PALADIN-FLOWING_SMITE.title": "Flowing Smite",
-  "PALADIN-SEARING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack applies {SearingSmitePower:diff()} [gold]Burn[/gold].",
+  "PALADIN-SEARING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack this turn applies {SearingSmitePower:diff()} [gold]Burn[/gold].",
   "PALADIN-SEARING_SMITE.title": "Searing Smite"
 }
