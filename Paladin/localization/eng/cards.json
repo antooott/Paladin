@@ -16,5 +16,9 @@
   "PALADIN-SEARING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. Your next Attack this turn applies {SearingSmitePower:diff()} [gold]Burn[/gold].",
   "PALADIN-SEARING_SMITE.title": "Searing Smite",
   "PALADIN-ABSORBING_STRIKE.description": "Deal {Damage:diff()} damage. \\nGain {PlatingPower:diff()} [gold]Plating[/gold].",
-  "PALADIN-ABSORBING_STRIKE.title": "Absorbing Strike"
+  "PALADIN-ABSORBING_STRIKE.title": "Absorbing Strike",
+  "PALADIN-DONNING_PLATE.description": "Gain {PlatingPower:diff()} [gold]Plating[/gold]. \\nGain {VulnerablePower:diff()} [gold]Vulnerable[/gold]. ",
+  "PALADIN-DONNING_PLATE.title": "Donning Plate",
+  "PALADIN-SHIELD_BREAK.description": "Remove all [gold]Block[/gold] from the enemy. \\nDeal {Damage:diff()} damage." ,
+  "PALADIN-SHIELD_BREAK.title": "Shield Break"
 }
