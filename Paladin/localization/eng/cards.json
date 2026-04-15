@@ -22,5 +22,7 @@
   "PALADIN-SHIELD_BREAK.description": "Remove all [gold]Block[/gold] from the enemy. \\nDeal {Damage:diff()} damage." ,
   "PALADIN-SHIELD_BREAK.title": "Shield Break",
   "PALADIN-INTIMIDATE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.",
-  "PALADIN-INTIMIDATE.title": "Intimidate"
+  "PALADIN-INTIMIDATE.title": "Intimidate",
+  "PALADIN-PRESS_THE_ATTACK.description": "Deal {Damage:diff()} damage. \\nThis costs 0 if you have [gold]Vigor[/gold].",
+  "PALADIN-PRESS_THE_ATTACK.title": "Press The Attack"
 }
