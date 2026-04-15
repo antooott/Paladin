@@ -24,6 +24,7 @@ public class DivineSmite : PaladinCard
         WithPower<VigorPower>(6);
         WithPower<SpellSlotPower>(1);
         WithKeyword(PaladinKeywords.SpellLvl1);
+        WithTags(PaladinTags.Smite);
     }
 
     protected override async Task OnPlay(

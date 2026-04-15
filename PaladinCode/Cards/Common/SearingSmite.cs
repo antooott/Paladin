@@ -26,6 +26,7 @@ public sealed class SearingSmite : PaladinCard
         WithPower<SearingSmitePower>(3);
         WithPower<SpellSlotPower>(1);
         WithKeyword(PaladinKeywords.SpellLvl1);
+        WithTags(PaladinTags.Smite);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -42,7 +43,7 @@ public sealed class SearingSmite : PaladinCard
         DynamicVars["SearingSmitePower"].UpgradeValueBy(1m);
     }
     
-    protected override bool IsPlayable
+    protected override bool IsPlayablegit 
     {
         get
         {
