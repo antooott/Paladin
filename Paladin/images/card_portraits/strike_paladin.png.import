@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uu77mmphqjie"
-path="res://.godot/imported/card.png-80cb11f0b0db7598f444079dfc64b498.ctex"
+uid="uid://bqd0fwoawu6si"
+path="res://.godot/imported/strike_paladin.png-9c91bb0f6e677fb86118ba09bc6c60c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Paladin/images/card_portraits/card.png"
-dest_files=["res://.godot/imported/card.png-80cb11f0b0db7598f444079dfc64b498.ctex"]
+source_file="res://Paladin/images/card_portraits/strike_paladin.png"
+dest_files=["res://.godot/imported/strike_paladin.png-9c91bb0f6e677fb86118ba09bc6c60c9.ctex"]
 
 [params]
 

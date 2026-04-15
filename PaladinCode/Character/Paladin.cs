@@ -24,10 +24,10 @@ public class Paladin : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
+        ModelDb.Card<StrikePaladin>(),
+        ModelDb.Card<StrikePaladin>(),
+        ModelDb.Card<StrikePaladin>(),
+        ModelDb.Card<StrikePaladin>(),
         ModelDb.Card<DivineSmite>(),
         ModelDb.Card<DefendPaladin>(),
         ModelDb.Card<DefendPaladin>(),

@@ -1,6 +1,8 @@
 {
   "PALADIN-DEFEND_PALADIN.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "PALADIN-DEFEND_PALADIN.title": "Defend",
+  "PALADIN-STRIKE_PALADIN.description": "Deal {Damage:diff()} damage.",
+  "PALADIN-STRIKE_PALADIN.title": "Strike",
   "PALADIN-DIVINE_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "PALADIN-DIVINE_SMITE.title": "Divine Smite",
   "PALADIN-DEFENDING.description": "Gain {Block:diff()} [gold]Block[/gold]. Umazing!",
