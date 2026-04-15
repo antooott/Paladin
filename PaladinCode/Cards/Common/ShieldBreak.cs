@@ -11,7 +11,7 @@ namespace Paladin.PaladinCode.Cards.Common;
 public sealed class ShieldBreak : PaladinCard
 {
     public ShieldBreak()
-        : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+        : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
         WithDamage(7);
     }
