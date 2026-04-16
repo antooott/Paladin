@@ -26,5 +26,7 @@
   "PALADIN-INTIMIDATE.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.",
   "PALADIN-INTIMIDATE.title": "Intimidate",
   "PALADIN-PRESS_THE_ATTACK.description": "Deal {Damage:diff()} damage. \\nThis costs 0 if you have [gold]Vigor[/gold].",
-  "PALADIN-PRESS_THE_ATTACK.title": "Press The Attack"
+  "PALADIN-PRESS_THE_ATTACK.title": "Press The Attack",
+  "PALADIN-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
+  "PALADIN-WIDE_SWING.title": "Wide Swing"
 }
