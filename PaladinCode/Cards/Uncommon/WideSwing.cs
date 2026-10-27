@@ -14,11 +14,11 @@ public sealed class WideSwing : PaladinCard
         WithDamage(20);
     }
 
-    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         WideSwing card = this;
-        ArgumentNullException.ThrowIfNull((object) play.Target, "cardPlay.Target");
-        await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((PaladinCard) card).Targeting(play.Target)
+        ArgumentNullException.ThrowIfNull((object) cardPlay.Target, "cardPlay.Target");
+        await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((PaladinCard) card, cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
     }
     protected override void OnUpgrade()
