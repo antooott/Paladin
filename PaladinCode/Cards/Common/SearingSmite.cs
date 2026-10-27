@@ -48,7 +48,7 @@ public sealed class SearingSmite : PaladinCard
         get
         {
             SearingSmite searingSmite = this;
-            if (searingSmite.Owner.HasPower<SpellSlotPower>() &&  searingSmite.Owner.Creature.GetPowerAmount<SpellSlotPower>() >= searingSmite.CanonicalEnergyCost)
+            if (searingSmite.Owner.HasPower<SpellSlotPower>() &&  searingSmite.Owner.Creature.GetPowerAmount<SpellSlotPower>() >= 1)
             {
                 return true;
             }
