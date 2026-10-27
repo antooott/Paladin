@@ -13,5 +13,8 @@
   "PALADIN-BURN_POWER.title": "BurnPower",
   "PALADIN-SPELL_SLOT_POWER.description": "",
   "PALADIN-SPELL_SLOT_POWER.smartDescription": "",
-  "PALADIN-SPELL_SLOT_POWER.title": "Spell Slots"
+  "PALADIN-SPELL_SLOT_POWER.title": "Spell Slots",
+  "PALADIN-BANISHING_SMITE_POWER.description": "Banishing",
+  "PALADIN-BANISHING_SMITE_POWER.smartDescription": "smart description",
+  "PALADIN-BANISHING_SMITE_POWER.title": "BanishingSmitePower"
 }

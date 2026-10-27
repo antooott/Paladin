@@ -28,5 +28,7 @@
   "PALADIN-PRESS_THE_ATTACK.description": "Deal {Damage:diff()} damage. \\nThis costs 0 if you have [gold]Vigor[/gold].",
   "PALADIN-PRESS_THE_ATTACK.title": "Press The Attack",
   "PALADIN-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
-  "PALADIN-WIDE_SWING.title": "Wide Swing"
+  "PALADIN-WIDE_SWING.title": "Wide Swing",
+  "PALADIN-BANISHING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. \\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
+  "PALADIN-BANISHING_SMITE.title": "Banishing Smite"
 }
