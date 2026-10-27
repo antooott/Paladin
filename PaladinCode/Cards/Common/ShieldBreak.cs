@@ -22,9 +22,9 @@ public sealed class ShieldBreak : PaladinCard
         ArgumentNullException.ThrowIfNull((object)cardPlay.Target, "cardPlay.Target");
         await CreatureCmd.TriggerAnim(cardSource.Owner.Creature, "Cast", cardSource.Owner.Character.CastAnimDelay);
         VfxCmd.PlayOnCreatureCenter(cardSource.Owner.Creature, "vfx/vfx_flying_slash");
-        await CreatureCmd.LoseBlock(cardPlay.Target, (Decimal)cardPlay.Target.Block);
+        await CreatureCmd.LoseBlock(choiceContext, cardPlay.Target, (Decimal)cardPlay.Target.Block, this.Owner.Creature);
         AttackCommand attackCommand = await DamageCmd.Attack(cardSource.DynamicVars.Damage.BaseValue)
-            .FromCard((CardModel)cardSource).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash")
+            .FromCard((CardModel)cardSource, cardPlay).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }
     protected override void OnUpgrade()

@@ -22,8 +22,8 @@ public sealed class DonningPlate : PaladinCard
     {
         DonningPlate cardSource = this;
         await CreatureCmd.TriggerAnim(cardSource.Owner.Creature, "Cast", cardSource.Owner.Character.CastAnimDelay); 
-        PlatingPower? platingPower = await PowerCmd.Apply<PlatingPower>(cardSource.Owner.Creature, cardSource.DynamicVars["PlatingPower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource); 
-        Task<VulnerablePower?> vulnerablePower = PowerCmd.Apply<VulnerablePower>(cardSource.Owner.Creature, cardSource.DynamicVars["VulnerablePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
+        PlatingPower? platingPower = await PowerCmd.Apply<PlatingPower>(choiceContext, cardSource.Owner.Creature, cardSource.DynamicVars["PlatingPower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource); 
+        Task<VulnerablePower?> vulnerablePower = PowerCmd.Apply<VulnerablePower>(choiceContext,cardSource.Owner.Creature, cardSource.DynamicVars["VulnerablePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
     }
     
     protected override void OnUpgrade()

@@ -29,7 +29,7 @@ public class FlowingSmite : PaladinCard
         FlowingSmite cardSource = this;
         await CreatureCmd.TriggerAnim(cardSource.Owner.Creature, "Cast", cardSource.Owner.Character.CastAnimDelay);
         await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
-        await PowerCmd.Apply<FlowingSmitePower>(cardSource.Owner.Creature, DynamicVars["FlowingSmitePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
+        await PowerCmd.Apply<FlowingSmitePower>(choiceContext, cardSource.Owner.Creature, DynamicVars["FlowingSmitePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
     }
 
     protected override void OnUpgrade()

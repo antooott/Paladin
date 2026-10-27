@@ -29,7 +29,7 @@ public class ReverberatingSmite : PaladinCard
         ReverberatingSmite cardSource = this;
         await CreatureCmd.TriggerAnim(cardSource.Owner.Creature, "Cast", cardSource.Owner.Character.CastAnimDelay);
         await CommonActions.ApplySelf<VigorPower>(this, DynamicVars["VigorPower"].BaseValue);
-        await PowerCmd.Apply<ReverberatingSmitePower>(cardSource.Owner.Creature, DynamicVars["ReverberatingSmitePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
+        await PowerCmd.Apply<ReverberatingSmitePower>(choiceContext, cardSource.Owner.Creature, DynamicVars["ReverberatingSmitePower"].BaseValue, cardSource.Owner.Creature, (CardModel) cardSource);
     }
 
     protected override void OnUpgrade()

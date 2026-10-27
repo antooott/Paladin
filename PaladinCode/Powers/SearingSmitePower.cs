@@ -27,7 +27,7 @@ public class SearingSmitePower: CustomPowerModel
         SearingSmitePower searingSmitePower = this;
         if (dealer == null || dealer != searingSmitePower.Owner && dealer.PetOwner?.Creature != searingSmitePower.Owner || !props.IsPoweredAttack_())
             return;
-        BurnPower burnPower = await PowerCmd.Apply<BurnPower>(target, (Decimal) (searingSmitePower.Amount), searingSmitePower.Owner, (CardModel) null);
+        BurnPower burnPower = await PowerCmd.Apply<BurnPower>(choiceContext, target, (Decimal) (searingSmitePower.Amount), searingSmitePower.Owner, (CardModel) null);
         await PowerCmd.Remove((PowerModel)this);
     }
 }

@@ -14,10 +14,12 @@ public sealed class SpellSlotPower : PaladinPower
 
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         SpellSlotPower power = this;
         if (side != power.Owner.Side)
+            return;
+        if (!participants.Contains<Creature>(this.Owner))
             return;
         await PowerCmd.Remove((PowerModel)power);
     }

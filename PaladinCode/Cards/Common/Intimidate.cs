@@ -31,8 +31,8 @@ public class Intimidate : PaladinCard
         
         foreach (Creature enemy in (IEnumerable<Creature>) intimidate.CombatState.HittableEnemies)
         {
-            WeakPower weakPower = await PowerCmd.Apply<WeakPower>(enemy, weak, intimidate.Owner.Creature, (CardModel) intimidate);
-            VulnerablePower vulnerablePower = await PowerCmd.Apply<VulnerablePower>(enemy, vul, intimidate.Owner.Creature, (CardModel) intimidate);
+            WeakPower weakPower = await PowerCmd.Apply<WeakPower>(choiceContext, enemy, weak, intimidate.Owner.Creature, (CardModel) intimidate);
+            VulnerablePower vulnerablePower = await PowerCmd.Apply<VulnerablePower>(choiceContext,enemy, vul, intimidate.Owner.Creature, (CardModel) intimidate);
         }
 
     }

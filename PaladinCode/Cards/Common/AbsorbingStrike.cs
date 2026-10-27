@@ -24,10 +24,9 @@ public sealed class AbsorbingStrike : PaladinCard
     {
         AbsorbingStrike card = this;
         ArgumentNullException.ThrowIfNull((object) cardPlay.Target, "cardPlay.Target");
-        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
-        PlatingPower platingPower = await PowerCmd.Apply<PlatingPower>(card.Owner.Creature, card.DynamicVars["PlatingPower"].BaseValue, card.Owner.Creature, (CardModel) card);
+        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card, cardPlay).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        PlatingPower? platingPower = await PowerCmd.Apply<PlatingPower>(choiceContext, card.Owner.Creature, card.DynamicVars["PlatingPower"].BaseValue, card.Owner.Creature, (CardModel) card);
     }
-
     protected override void OnUpgrade()
     {
         this.DynamicVars.Damage.UpgradeValueBy(2M);

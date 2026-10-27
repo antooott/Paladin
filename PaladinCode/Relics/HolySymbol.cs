@@ -27,7 +27,7 @@ public sealed class HolySymbol : PaladinRelic
         if (player != holySymbol.Owner)
             return;
         //await CommonActions.Apply<SpellSlotPower>(holySymbol.Owner.Creature, holySymbol.DynamicVars["SpellSlotPower"]);
-        SpellSlotPower spellSlotPower = await PowerCmd.Apply<SpellSlotPower>(player.Creature, 2m, player.Creature, null);
+        SpellSlotPower spellSlotPower = await PowerCmd.Apply<SpellSlotPower>(choiceContext, player.Creature, 2m, player.Creature, null, true);
         holySymbol.Flash();
     }
 
