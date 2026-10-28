@@ -16,5 +16,8 @@
   "PALADIN-SPELL_SLOT_POWER.title": "Spell Slots",
   "PALADIN-BANISHING_SMITE_POWER.description": "Banishing",
   "PALADIN-BANISHING_SMITE_POWER.smartDescription": "smart description",
-  "PALADIN-BANISHING_SMITE_POWER.title": "BanishingSmitePower"
+  "PALADIN-BANISHING_SMITE_POWER.title": "BanishingSmitePower",
+  "PALADIN-ENDLESS_BULWARK_POWER.description": "plate up",
+  "PALADIN-ENDLESS_BULWARK_POWER.smartDescription": "smart desc",
+  "PALADIN-ENDLESS_BULWARK_POWER.title": "EndlessBulwarkPower"
 }

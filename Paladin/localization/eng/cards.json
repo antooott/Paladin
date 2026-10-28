@@ -30,5 +30,7 @@
   "PALADIN-WIDE_SWING.description": "Deal {Damage:diff()} damage.",
   "PALADIN-WIDE_SWING.title": "Wide Swing",
   "PALADIN-BANISHING_SMITE.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold]. \\nThe next Attack you play deals {IfUpgraded:show:triple|double} damage and applies [gold]Doom[/gold] equal to damage dealt.",
-  "PALADIN-BANISHING_SMITE.title": "Banishing Smite"
+  "PALADIN-BANISHING_SMITE.title": "Banishing Smite",
+  "PALADIN-ENDLESS_BULWARK.description": "At the start of your turn, gain {EndlessBulwarkPower:diff()} [gold]Plating[/gold].",
+  "PALADIN-ENDLESS_BULWARK.title": "Endless Bulwark"
 }
