@@ -34,5 +34,7 @@
   "PALADIN-ENDLESS_BULWARK.description": "At the start of your turn, gain {EndlessBulwarkPower:diff()} [gold]Plating[/gold].",
   "PALADIN-ENDLESS_BULWARK.title": "Endless Bulwark",
   "PALADIN-AID.description": "ALL players gain {PlatingPower:diff()} [gold]Plating[/gold].",
-  "PALADIN-AID.title": "Aid"
+  "PALADIN-AID.title": "Aid",
+  "PALADIN-SHIELD_OF_FAITH.description": "Gain {Block:diff()} Block. Draw {Cards:diff()} Card.",
+  "PALADIN-SHIELD_OF_FAITH.title": "Shield Of Faith"
 }
