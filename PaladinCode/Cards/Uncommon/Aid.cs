@@ -17,6 +17,7 @@ public class Aid : PaladinCard
     {
         WithPower<PlatingPower>(3);
         WithPower<SpellSlotPower>(1);
+        WithKeyword(CardKeyword.Exhaust);
         WithKeyword(PaladinKeywords.Spell);
     }
 
