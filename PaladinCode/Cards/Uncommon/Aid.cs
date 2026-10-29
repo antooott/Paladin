@@ -1,4 +1,5 @@
 using BaseLib.Extensions;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -23,6 +24,7 @@ public class Aid : PaladinCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        await CommonActions.ApplySelf<SpellSlotPower>(this, -DynamicVars["SpellSlotPower"].BaseValue);
         ICombatState combatState = this.CombatState;
         foreach (Player player in (IEnumerable<Player>)((combatState != null
                      ? (object)combatState.Players
