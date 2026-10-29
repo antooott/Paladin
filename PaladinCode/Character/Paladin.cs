@@ -33,7 +33,7 @@ public class Paladin : PlaceholderCharacterModel
         ModelDb.Card<DefendPaladin>(),
         ModelDb.Card<DefendPaladin>(),
         ModelDb.Card<DefendPaladin>(),
-        ModelDb.Card<DefendPaladin>(),
+        ModelDb.Card<ShieldOfFaith>(),
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
